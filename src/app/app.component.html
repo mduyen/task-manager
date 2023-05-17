@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <div class="nav">
@@ -19,7 +21,7 @@
     <div class="content">
       <div class="last_container">
 
-        
+
         <div class="infor_user">
           <div class="logo">
             <h3>RAPICAD</h3>
@@ -33,51 +35,46 @@
 
         <div class="menu">
           <div class="table_control">
-            <a (click)="ganCN('')" href="">Dashboard</a>
+            <a routerLink="/">Dashboard</a>
           </div>
           <div class="table_control">
-            <a (click)="ganCN('addproject')" href="">Add project</a>
+            <a routerLink="/list-project">List Project</a>
           </div>
           <div class="table_control">
-            <a (click)="ganCN('listproject')" href="">List project</a>
+            <a routerLink="/list-staff">List Staff</a>
           </div>
           <div class="table_control">
-            <a (click)="ganCN('addtask')" href="">Add task</a>
+            <a routerLink="/list-task">List Task</a>
           </div>
           <div class="table_control">
-            <a (click)="ganCN('listtask')" href="">List task</a>
+            <a routerLink="/add-project">Add Project</a>
           </div>
           <div class="table_control">
-            <a (click)="ganCN('addstaff')" href="">Add staff</a>
+            <a routerLink="/add-task">Add Task</a>
           </div>
           <div class="table_control">
-            <a (click)="ganCN('liststaff')" href="">List staff</a>
+            <a routerLink="/add-staff">Add Staff</a>
           </div>
         </div>
-     </div>
-     <div class="second_container">
-       <app-project-list>*ngIf="chucNang=='' || chucNang=='listproject'</app-project-list>
+      </div>
+      <div class="second_container">
+        <!-- <app-project-list>*ngIf="chucNang=='' || chucNang=='listproject'</app-project-list>
        <app-staff-list>*ngIf="chucNang=='' || chucNang=='liststaff'</app-staff-list>
        <app-task-list>*ngIf="chucNang=='' || chucNang=='listtask'</app-task-list>
        <app-project-add>*ngIf="chucNang=='' || chucNang=='addproject'</app-project-add>
        <app-staff-add>*ngIf="chucNang=='' || chucNang=='addstaff'</app-staff-add>
-       <app-task-add>*ngIf="chucNang=='' || chucNang=='addtask'</app-task-add>
+       <app-task-add>*ngIf="chucNang=='' || chucNang=='addtask'</app-task-add> -->
+        <router-outlet></router-outlet>
 
-       
-       
- 
-   </div>
-   <div class="first_container">
- 
-     <div class="infor_user">
-       <h3>RAPICAD</h3>
-       <img src="" alt="">
-       <div class="name">Annie Morgan</div>
-       <div class="title">sth</div>
-     </div>
-   </div>
+      </div>
+      <div class="first_container">
+
+        <div class="infor_user">
+          hihi
+        </div>
+      </div>
     </div>
-      
+
 
 
 
@@ -85,4 +82,5 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

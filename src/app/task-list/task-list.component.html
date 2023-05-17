@@ -1,1 +1,25 @@
-<p>task-list works!</p>
+
+<div class="list_project">
+    <table>
+        <tr>
+          <th> id </th>
+          <th> Name</th>
+          <th> Date of birth </th>
+          <th> Gender</th>
+          <th> Area</th>
+        </tr>
+        <tr *ngFor="let nv of listTask">
+          <td> {{nv.id}} </td>
+          <td> {{nv.nameTask}}</td>
+          <td> {{nv.description}}</td>
+          <td> {{nv.projectID}}</td>
+          <td> {{nv.staffID}}</td>
+          <td> {{nv.priority}}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+

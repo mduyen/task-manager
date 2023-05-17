@@ -1,1 +1,23 @@
-<p>staff-list works!</p>
+<div class="list_project">
+    <table>
+        <tr>
+          <th> id </th>
+          <th> Name</th>
+          <th> Date of birth </th>
+          <th> Gender</th>
+          <th> Area</th>
+        </tr>
+        <tr *ngFor="let nv of listStaff">
+          <td> {{nv.id}} </td>
+          <td> {{nv.lastName}}</td>
+          <td> {{nv.firstName}}</td>
+          <td> {{nv.dateOfBirth}}</td>
+          <td> {{nv.gender}}</td>
+          <td> {{nv.area}}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+

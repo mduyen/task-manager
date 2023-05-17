@@ -7,10 +7,6 @@
     overflow-y: hidden;
     font-family: 'Sulphur Point';
 }
-:root{
-    --background-color-white: rgb(243, 241, 246);
-    --color-purple: rgb(160, 129, 163);
-}
 html{
     font-size: 62,5%;
     
@@ -19,12 +15,9 @@ html{
     width: 100vw;
     height: 100vh;
 }
-
-
 .nav{
     width: 100%;
     height: 5%;
-   
 }
 .content{
     width: 100%;
@@ -91,17 +84,16 @@ html{
     background-color: rgb(216, 202, 225);
 }
 .menu .table_control a{
-
+    font-weight: 600;
     font-family: 'Sulphur Point';
 }
 .second_container{
-    width: 40%;
+    width: 55%;
     height: 100%;
     
 }
 .first_container{
-    width: 30%;
+    width: 15%;
     height: 100%;
-    
     border-radius: 20px;
 }

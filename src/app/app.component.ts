@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'asm';
+  chucNang:string='';
+  ganCN(cn:string=''){
+    this.chucNang=cn;
+    console.log(this.chucNang);
+    
+  }
+  
 }

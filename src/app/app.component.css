@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Sulphur Point';
+}
+:root{
+    --background-color-white: rgb(243, 241, 246);
+    --color-purple: rgb(160, 129, 163);
+}
+html{
+    font-size: 62,5%;
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.nav{
+    width: 100%;
+    height: 5%;
+   
+}
+.content{
+    width: 100%;
+    height: 92%;
+    display: flex;
+   
+}
+.last_container{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(243, 241, 246);
+    border-radius: 20px;
+}
+.logo h3{
+    color: rgb(160, 129, 163);
+}
+.infor_user{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.infor_user_img {
+    width: 80px;
+    height: 80px;
+    overflow-y: hidden;
+}
+.infor_user_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.last_container .menu{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   align-items: center;
+}
+
+.menu .table_control{
+    width: 100%;
+    height: 50px;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+    
+}
+.menu .table_control:hover{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgb(216, 202, 225);
+}
+.menu .table_control a{
+
+    font-family: 'Sulphur Point';
+}
+.second_container{
+    width: 40%;
+    height: 100%;
+    
+}
+.first_container{
+    width: 30%;
+    height: 100%;
+    
+    border-radius: 20px;
+}

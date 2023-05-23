@@ -6,7 +6,7 @@ import { Task } from '../task';
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })
-export class TaskListComponent {
+export class TaskListComponent{
   listTask:Task[] = [
     {id:1, nameTask:'Phân tích yêu cầu', projectID:1, staffID:1,description:"Phân tích các yêu cầu của khách hàng để team thực hiện",status:0,priority:1 },
     {id:2, nameTask:'Thực hiện layout cho ứng dụng', projectID:1, staffID:2,description:"Thực hiện layout website, chú ý kỹ responsive",status:0,priority:1 },
@@ -18,4 +18,15 @@ export class TaskListComponent {
     {id:8, nameTask:'Hướng dẫn sử dụng và bàn giao', projectID:5, staffID:1,description:"Hướng dẫn sử dụng cho khách hàng",status:0,priority:2 },
     {id:9, nameTask:'Testing 2', projectID:4, staffID:2,description:"Kiểm tra các tính năng bảo mật theo các yêu cầu đã nêu trong tài liệu dự án",status:0,priority:2 },
   ]
+  constructor() { }
+  tukhoa:string='';
+  LTask:Task[]=[];
+  ngOnInit(): void {
+    this.LTask=this.listTask;
+  }
+  checkTask() {
+    console.log(this.tukhoa);
+    this.listTask = this.LTask.filter(p=>p.nameTask.includes(this.tukhoa))
+  }
+  
 }

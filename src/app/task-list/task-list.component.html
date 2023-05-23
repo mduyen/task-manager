@@ -1,23 +1,34 @@
+<div class="nav">
+
+</div>
+<input name="tk" [(ngModel)]="tukhoa" (keyup)="checkTask()"><i class="bi bi-search"></i>
 
 <div class="list_project">
     <table>
         <tr>
-          <th> id </th>
+          <th class="id"> id </th>
           <th> Name</th>
-          <th> Date of birth </th>
-          <th> Gender</th>
-          <th> Area</th>
+          <th class="description"> Description </th>
+          <th class="project"> Project ID</th>
+          <th class="staff"> Staff ID</th>
+          <th class="priority"> Priority</th>
         </tr>
         <tr *ngFor="let nv of listTask">
-          <td> {{nv.id}} </td>
-          <td> {{nv.nameTask}}</td>
-          <td> {{nv.description}}</td>
-          <td> {{nv.projectID}}</td>
-          <td> {{nv.staffID}}</td>
-          <td> {{nv.priority}}</td>
+          <td class="id"> {{nv.id}} </td>
+          <td class="name"> {{nv.nameTask}}</td>
+          <td class="description"> {{nv.description}}</td>
+          <td class="project"> {{nv.projectID}}</td>
+          <td class="staff"> {{nv.staffID}}</td>
+          <td class="priority"> {{nv.priority}}</td>
         </tr>
     </table>
 </div>
+
+
+
+
+
+
 
 
 

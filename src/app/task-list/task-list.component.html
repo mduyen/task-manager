@@ -1,6 +1,7 @@
 <div class="nav">
 
 </div>
+
 <input name="tk" [(ngModel)]="tukhoa" (keyup)="checkTask()"><i class="bi bi-search"></i>
 
 <div class="list_project">
@@ -19,7 +20,9 @@
           <td class="description"> {{nv.description}}</td>
           <td class="project"> {{nv.projectID}}</td>
           <td class="staff"> {{nv.staffID}}</td>
-          <td class="priority"> {{nv.priority}}</td>
+          <td><span *ngIf='nv.priority==1'>Ưu tiên</span>
+            <span *ngIf='nv.priority==2' >Không ưu tiên</span>
+        </td>
         </tr>
     </table>
 </div>

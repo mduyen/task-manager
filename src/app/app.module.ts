@@ -14,6 +14,7 @@ import { TaskEditComponent } from './task-edit/task-edit.component';
 import { StaffAddComponent } from './staff-add/staff-add.component';
 import { StaffEditComponent } from './staff-edit/staff-edit.component';
 import { HomeComponent } from './home/home.component';
+import { StaffDetailComponent } from './staff-detail/staff-detail.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomeComponent } from './home/home.component';
     StaffListComponent,
     StaffAddComponent,
     StaffEditComponent,
-    HomeComponent
+    HomeComponent,
+    StaffDetailComponent
   ],
   imports: [
     BrowserModule,

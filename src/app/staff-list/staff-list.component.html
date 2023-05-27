@@ -1,19 +1,25 @@
-<input type="text">
+<div class="nav">
+
+</div>
+
+<input name="sl" [(ngModel)]="stafflist" (keyup)="checkStaff()"><i class="bi bi-search"></i>
+
 <div class="list_project">
     <table>
         <tr>
-          <th> id </th>
+          <th class="id"> id </th>
           <th> Name</th>
           <th> Date of birth </th>
           <th> Gender</th>
           <th> Area</th>
         </tr>
         <tr *ngFor="let nv of listStaff">
-          <td> {{nv.id}} </td>
-          <td> {{nv.lastName}}</td>
-          <td> {{nv.firstName}}</td>
+          <td class="id"> {{nv.id}} </td>
+          <td>{{nv.lastName}} {{nv.firstName}} </td>
           <td> {{nv.dateOfBirth}}</td>
-          <td> {{nv.gender}}</td>
+          <td><span *ngIf='nv.gender==true'>Nam</span>
+              <span *ngIf='nv.gender==false' >Nữ</span>
+          </td>
           <td> {{nv.area}}</td>
         </tr>
     </table>

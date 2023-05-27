@@ -1,17 +1,23 @@
-<input type="text">
+<div class="nav">
+
+</div>
+
+<input name="pl" [(ngModel)]="projectlist" (keyup)="checkProduct()"><i class="bi bi-search"></i>
+<!-- <input name="tk" [(ngModel)]="tukhoa" (keyup)="checkTask()"> -->
+
 <div class="list_project">
     <table>
         <tr>
-          <th> id </th>
+          <th class="id"> id </th>
           <th> Name</th>
           <th> Date Start </th>
           <th> Price</th>
         </tr>
         <tr *ngFor="let da of listProject">
-          <td> {{da.id}} </td>
+          <td class="id"> {{da.id}} </td>
           <td> {{da.nameProject}}</td>
-          <td> {{da.dateStart}}</td>
-          <td> {{da.price}}</td>
+          <td> {{da.dateStart|date:'dd/MM/yyyy'}}</td>
+          <td> {{da.price.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'})}}</td>
         </tr>
     </table>
 </div>

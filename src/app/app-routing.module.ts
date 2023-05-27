@@ -7,6 +7,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
 import { TaskAddComponent } from './task-add/task-add.component';
 import { StaffAddComponent } from './staff-add/staff-add.component';
+import { StaffDetailComponent } from './staff-detail/staff-detail.component';
 
 const routes: Routes = [
   {

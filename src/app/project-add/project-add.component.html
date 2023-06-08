@@ -1,23 +1,35 @@
 <div class="form_content">
-    <form action="">
-        <div class="group_form">
-            <label for="">Id</label>
-            <input type="text">
-        </div>
+    <form #frm="ngForm" action="">
         <div class="group_form">
             <label for="">Name</label>
-            <input type="text" >
+            <input ngModel name="nameProject" type="text" >
         </div>
         <div class="group_form">
             <label for="">Date Start</label>
-            <input type="text" >
+            <input ngModel name="dateStart" type="date" >
         </div>
         <div class="group_form">
             <label for="">Price</label>
-            <input type="number">
+            <input ngModel name="price" type="number">
         </div>
         <div class="group_form">
-            <!-- <button (click)="projectAdd()"></button> -->
+            <label for="">Leader</label>
+            <select ngModel name="leader" >
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.firstName}} {{nv.lastName}} 
+                </option>
+            </select>
+        </div>
+        <div class="group_form">
+            <label for="">Member</label>
+            <select name="member" ngModel multiple size="5">
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.firstName}} {{nv.lastName}} 
+                </option>
+            </select>
+        </div>
+        <div class="group_form">
+            <button (click)="addProject(frm.value)">hihi</button>
         </div>
         
     </form>

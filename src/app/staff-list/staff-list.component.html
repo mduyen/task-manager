@@ -2,7 +2,8 @@
 
 </div>
 
-<input name="sl" [(ngModel)]="stafflist" (keyup)="checkStaff()"><i class="bi bi-search"></i>
+<input><i class="bi bi-search"></i>
+<!-- <input name="sl" [(ngModel)]="stafflist" (keyup)="checkStaff()"><i class="bi bi-search"></i> -->
 
 <div class="list_project">
     <table>
@@ -21,6 +22,7 @@
               <span *ngIf='nv.gender==false' >Nữ</span>
           </td>
           <td> {{nv.area}}</td>
+          <td> <a href="#" (click)="deleteStaff(nv.id)"> Delete </a> </td>
         </tr>
     </table>
 </div>

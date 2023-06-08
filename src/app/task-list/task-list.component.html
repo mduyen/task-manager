@@ -2,7 +2,8 @@
 
 </div>
 
-<input name="tk" [(ngModel)]="tukhoa" (keyup)="checkTask()"><i class="bi bi-search"></i>
+<input><i class="bi bi-search"></i>
+<!-- <input name="tk" [(ngModel)]="tukhoa" (keyup)="checkTask()"><i class="bi bi-search"></i> -->
 
 <div class="list_project">
     <table>
@@ -23,6 +24,7 @@
           <td><span *ngIf='nv.priority==1'>Ưu tiên</span>
             <span *ngIf='nv.priority==2' >Không ưu tiên</span>
         </td>
+        <td> <a href="#" (click)="deleteTask(nv.id)"> Delete </a> </td>
         </tr>
     </table>
 </div>

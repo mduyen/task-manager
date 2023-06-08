@@ -9,6 +9,7 @@ import { TaskAddComponent } from './task-add/task-add.component';
 import { StaffAddComponent } from './staff-add/staff-add.component';
 import { StaffDetailComponent } from './staff-detail/staff-detail.component';
 
+
 const routes: Routes = [
   {
     path: '',

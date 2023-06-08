@@ -2,7 +2,9 @@
 
 </div>
 
-<input name="pl" [(ngModel)]="projectlist" (keyup)="checkProduct()"><i class="bi bi-search"></i>
+<input><i class="bi bi-search"></i>
+<!-- <input name="pl" [(ngModel)]="projectlist" (keyup)="checkProduct()"><i class="bi bi-search"></i> -->
+
 <!-- <input name="tk" [(ngModel)]="tukhoa" (keyup)="checkTask()"> -->
 
 <div class="list_project">
@@ -17,8 +19,10 @@
           <td class="id"> {{da.id}} </td>
           <td> {{da.nameProject}}</td>
           <td> {{da.dateStart|date:'dd/MM/yyyy'}}</td>
-          <td> {{da.price.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'})}}</td>
-        </tr>
+          <td> {{da.price.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'}) }}</td>
+          <td> <a href="#" (click)="deleteProject(da.id)"> Delete </a> </td>
+          <!-- <td> <a href="#" routerLink="/project/edit/{{da.id}}">Edit</a></td> -->
+        </tr> 
     </table>
 </div>
 

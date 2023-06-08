@@ -1,28 +1,36 @@
 <div class="form_content">
-    <form action="">
+    <form #frm="ngForm" action="">
         <div class="group_form">
-            <label for="">Id</label>
-            <input type="text">
+            <label for="">First Name</label>
+            <input ngModel name="firstName" type="text">
         </div>
         <div class="group_form">
-            <label for="">Name</label>
-            <input type="text">
+            <label for="">Last Name</label>
+            <input ngModel name="lastName" type="text">
         </div>
         <div class="group_form">
-            <label for="">Description</label>
-            <input type="text">
+            <label for="">Date of birth</label>
+            <input ngModel name="dateOfBirth" type="date">
         </div>
         <div class="group_form">
-            <label for="">Project ID</label>
-            <input type="number">
+            <label for="">Gender</label>
+            <select name="gender" ngModel multiple size="2">
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    <span *ngIf='nv.gender==true'>Nam</span>
+                    <span *ngIf='nv.gender==false' >Nữ</span>
+                </option>
+            </select>
         </div>
         <div class="group_form">
-            <label for="">Staff ID</label>
-            <input type="number">
+            <label for="">Area</label>
+            <select name="area" ngModel multiple size="5">
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.area}} 
+                </option>
+            </select>
         </div>
         <div class="group_form">
-            <label for="">Priority</label>
-            <input type="number">
+            <button (click)="addStaff(frm.value)">hihi</button>
         </div>
     </form>
 </div>

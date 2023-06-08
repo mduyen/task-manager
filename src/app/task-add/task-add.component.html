@@ -1,28 +1,52 @@
 <div class="form_content">
-    <form action="">
+    <form #frm="ngForm" action="">
         <div class="group_form">
-            <label for="">Id</label>
-            <input type="text">
+            <label for="">Name Task:</label>
+            <input ngModel name="nameTask" type="text">
         </div>
-        <div class="group_form">
-            <label for="">Name</label>
-            <input type="text">
-        </div>
-        <div class="group_form">
-            <label for="">Description</label>
-            <input type="text">
-        </div>
-        <div class="group_form">
+        <!-- <div class="group_form">
             <label for="">Project ID</label>
-            <input type="number">
+            <input ngModel name="projectID" type="text">
+        </div> -->
+        <div class="group_form">
+            <label for="">Project Name</label>
+            <select name="projectID" ngModel multiple size="5">
+                <option *ngFor = "let nv of listProject" value="{{nv.id}}">
+                    {{nv.nameProject}} 
+                </option>
+            </select>
         </div>
         <div class="group_form">
-            <label for="">Staff ID</label>
-            <input type="number">
+            <label for="">Staff Name</label>
+            <select name="staffID" ngModel multiple size="5">
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.firstName}} {{nv.lastName}}  
+                </option>
+            </select>
         </div>
         <div class="group_form">
-            <label for="">Priority</label>
-            <input type="number">
+            <label for="">Description:</label>
+            <input ngModel name="description" type="text">
+        </div>
+        <div class="group_form">
+            <label for="">Status: </label>
+            <input ngModel name="status" type="text">
+        </div>
+        <!-- <div class="group_form">
+            <label for="">Priority: </label>
+            <input ngModel name="priority" type="text">
+        </div> -->
+        <div class="group_form">
+            <label for="">Priority:</label>
+            <select name="priority" ngModel multiple size="2">
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    <span *ngIf='nv.gender==1'>Ưu tiên</span>
+                    <span *ngIf='nv.gender==2' >Khong ưu tiên</span>
+                </option>
+            </select>
+        </div>
+        <div class="group_form">
+            <button (click)="addTask(frm.value)">hihi</button>
         </div>
     </form>
 </div>

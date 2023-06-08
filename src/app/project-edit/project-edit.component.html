@@ -1,1 +1,37 @@
-<p>project-edit works!</p>
+<div class="form_content">
+    <form #frm="ngForm" action="">
+        <div class="group_form">
+            <label for="">Name</label>
+            <input name="nameProject" [(ngModel)]="project.nameProject" type="text" >
+        </div>
+        <div class="group_form">
+            <label for="">Date Start</label>
+            <input name="dateStart" [(ngModel)]="project.dateStart" type="date" >
+        </div>
+        <div class="group_form">
+            <label for="">Price</label>
+            <input name="price" [(ngModel)]="project.price" type="number">
+        </div>
+        <div class="group_form">
+            <label for="">Leader</label>
+            <select name="leader" [(ngModel)]="project.leader" >
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.firstName}} {{nv.lastName}} 
+                </option>
+            </select>
+        </div>
+        <div class="group_form">
+            <label for="">Member</label>
+            <select name="member" [(ngModel)]="project.member" multiple size="5">
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.firstName}} {{nv.lastName}} 
+                </option>
+            </select>
+        </div>
+        <!-- <div class="group_form">
+            <button (click)="editProject(frm.value)">Edit Project</button>
+        </div> -->
+        
+    </form>
+</div>
+

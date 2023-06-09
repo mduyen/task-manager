@@ -8,6 +8,8 @@ import { ProjectAddComponent } from './project-add/project-add.component';
 import { TaskAddComponent } from './task-add/task-add.component';
 import { StaffAddComponent } from './staff-add/staff-add.component';
 import { StaffDetailComponent } from './staff-detail/staff-detail.component';
+import { ProjectEditComponent } from './project-edit/project-edit.component';
+
 
 
 const routes: Routes = [
@@ -39,7 +41,14 @@ const routes: Routes = [
     path: 'add-staff',
     component: StaffAddComponent
   },
-  
+  {
+    path: 'list-project/edit/:id',
+    component: ProjectEditComponent
+  },
+  // {
+  //   path: 'list-staff/edit/:id',
+  //   component: StaffEditComponent
+  // },
 ];
 
 @NgModule({

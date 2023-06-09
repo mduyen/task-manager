@@ -1,1 +1,41 @@
-<p>staff-edit works!</p>
+<div class="form_content">
+    <form #frm="ngForm" action="">
+        <div class="group_form">
+            <label for="">lastName</label>
+            <input name="lastName" [(ngModel)]="project.lastName" type="text" >
+        </div>
+        <div class="group_form">
+            <label for="">firstName</label>
+            <input name="firstName" [(ngModel)]="project.firstName" type="text" >
+        </div>
+        <div class="group_form">
+            <label for="">dateOfBirth</label>
+            <input name="dateOfBirth" [(ngModel)]="project.dateOfBirth" type="date" >
+        </div>
+        <div class="group_form">
+            <label for="">gender</label>
+            <input name="gender" [(ngModel)]="project.gender" type="text">
+        </div>
+        <!-- <div class="group_form">
+            <label for="">area</label>
+            <select name="area" [(ngModel)]="project.area" >
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.firstName}} {{nv.lastName}} 
+                </option>
+            </select>
+        </div> -->
+        <div class="group_form">
+            <label for="">Member</label>
+            <select name="member" [(ngModel)]="project.member" multiple size="5">
+                <option *ngFor = "let nv of listStaff" value="{{nv.id}}">
+                    {{nv.firstName}} {{nv.lastName}} 
+                </option>
+            </select>
+        </div>
+        <div class="group_form">
+            <button (click)="editStaff()">Edit Project</button>
+        </div>
+        
+    </form>
+</div>
+

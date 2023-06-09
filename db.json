@@ -4,7 +4,7 @@
       "id": 1,
       "nameProject": "Quan ly trai heo",
       "dateStart": "2022-03-01",
-      "price": 3340000,
+      "price": 5340000,
       "leader": 1,
       "member": [
         1,
@@ -61,28 +61,26 @@
       ]
     },
     {
-      "nameProject": "dsf",
-      "dateStart": "2023-06-01",
+      "nameProject": "thay long dep trai",
+      "dateStart": "2023-06-07",
       "price": 45,
-      "id": 6
+      "id": 6,
+      "member": [
+        "4"
+      ],
+      "leader": "1"
     },
     {
-      "nameProject": "mduyn",
+      "nameProject": "thay long sieu dep trai",
       "dateStart": "2023-06-01",
       "price": 98798,
       "id": 7
     },
     {
-      "nameProject": "mduyn",
+      "nameProject": "thay long de thun",
       "dateStart": "2023-06-07",
       "price": 8989,
       "id": 8
-    },
-    {
-      "nameProject": "dfs",
-      "dateStart": "2023-06-09",
-      "price": 3434,
-      "id": 9
     },
     {
       "nameProject": "mduyn",
@@ -102,15 +100,32 @@
       "id": 11
     },
     {
-      "nameProject": "haha",
-      "dateStart": "2023-06-08",
-      "price": 111111,
+      "nameProject": "mduyn",
+      "dateStart": "2023-06-10",
+      "price": 5678,
       "leader": "1",
       "member": [
-        "2",
-        "3"
+        "1"
       ],
       "id": 12
+    },
+    {
+      "nameProject": "nhiiiii",
+      "dateStart": "2023-06-07",
+      "price": "",
+      "leader": "",
+      "member": "",
+      "id": 13
+    },
+    {
+      "nameProject": "mduyn",
+      "dateStart": "2023-06-06",
+      "price": 23333332,
+      "leader": "3",
+      "member": [
+        "2"
+      ],
+      "id": 14
     }
   ],
   "Staff": [
@@ -153,14 +168,6 @@
       "dateOfBirth": "2003-17-03",
       "gender": false,
       "area": "brvt"
-    },
-    {
-      "firstName": "jh",
-      "lastName": "jhk",
-      "dateOfBirth": "2023-06-07",
-      "gender": "nu",
-      "area": "jhguy",
-      "id": 6
     },
     {
       "firstName": "kljdsf",

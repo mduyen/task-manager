@@ -14,6 +14,7 @@ export class ProjectEditComponent {
     private router: Router,
     private route:ActivatedRoute
     ) {}
+
   listStaff:any;
   project:any;
   
@@ -22,10 +23,15 @@ export class ProjectEditComponent {
     let id = this.route.snapshot.params['id'];
     this.d.getOneProject(id).subscribe(data=>this.project = data)
   }
+
   // editProject() {
-  //   this.d.editProject(this.project).subscribe(data=> {
-  //     alert('Sửa dự án thành công')
-  //   this.router.navigate(['/list-project'])
-  // })
+  //   this.d.editProject(this.project).subscribe(data=> 
+  //     alert('Sửa dự án thành công'))
   // }
+  editProject() {
+    this.d.editProject(this.project).subscribe(data=> {
+      alert('Sửa dự án thành công')
+      this.router.navigate(['/list-project'])
+  })
+  }
 }

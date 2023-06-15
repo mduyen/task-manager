@@ -1,18 +1,6 @@
 {
   "Project": [
     {
-      "id": 1,
-      "nameProject": "Quan ly trai heo",
-      "dateStart": "2022-03-01",
-      "price": 5340000,
-      "leader": 1,
-      "member": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
       "id": 2,
       "nameProject": "Cay xanh cong vien",
       "dateStart": "2023-04-12",
@@ -110,15 +98,7 @@
       "id": 12
     },
     {
-      "nameProject": "nhiiiii",
-      "dateStart": "2023-06-07",
-      "price": "",
-      "leader": "",
-      "member": "",
-      "id": 13
-    },
-    {
-      "nameProject": "mduyn",
+      "nameProject": "mduynnnnnnnnn",
       "dateStart": "2023-06-06",
       "price": 23333332,
       "leader": "3",

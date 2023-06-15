@@ -35,22 +35,34 @@
             <i class="bi bi-speedometer"></i><a routerLink="/">Dashboard</a>
           </div>
           <div class="table_control">
-            <i class="bi bi-card-list"></i><a routerLink="/list-project">List Project</a>
+            <i class="bi bi-card-list"></i><a routerLink="/leader/list-project">List Project</a>
           </div>
           <div class="table_control">
-            <i class="bi bi-list"></i><a routerLink="/list-staff">List Staff</a>
+            <i class="bi bi-list"></i><a routerLink="/leader/list-staff">List Staff</a>
           </div>
           <div class="table_control">
-            <i class="bi bi-view-list"></i><a routerLink="/list-task">List Task</a>
+            <i class="bi bi-view-list"></i><a routerLink="/leader/list-task">List Task</a>
           </div>
           <div class="table_control">
-            <i class="bi bi-cloud-plus"></i><a routerLink="/add-project">Add Project</a>
+            <i class="bi bi-cloud-plus"></i><a routerLink="/leader/add-project">Add Project</a>
           </div>
           <div class="table_control">
-            <i class="bi bi-folder-plus"></i><a routerLink="/add-staff">Add Staff</a>
+            <i class="bi bi-folder-plus"></i><a routerLink="/leader/add-staff">Add Staff</a>
           </div>
           <div class="table_control">
-            <i class="bi bi-folder-plus"></i><a routerLink="/add-task">Add Task</a>
+            <i class="bi bi-folder-plus"></i><a routerLink="/leader/add-task">Add Task</a>
+          </div>
+          <div class="table_control">
+            <i class="bi bi-folder-plus"></i><a routerLink="/download">Download</a>
+          </div>
+          <div class="table_control">
+            <i class="bi bi-folder-plus"></i><a routerLink="/login">Sign In</a>
+          </div>
+          <!-- <div class="table_control">
+            <i class="bi bi-folder-plus"></i><a routerLink="/sign-up">Sign Up</a>
+          </div> -->
+          <div class="table_control" *ngIf="daDangNhap()">  
+            <i class="bi bi-folder-plus"></i><a routerLink="/change-pass">Change Pass</a>
           </div>
           
         </div>
@@ -59,6 +71,7 @@
       <div class="second_container">
         <router-outlet></router-outlet>
       </div>
+      <p class="text-white"> Tình trạng đăng nhập: {{ daDangNhap() }}</p>
 
       
 
